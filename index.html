@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Raghvendra Mishra" content="This is Personal Protfolio">
+    <title>Personal | Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilites.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="./image//logo-png.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header class="header flex item-center justifey-between">
+        <div class="name-logo">
+            <a href="#">я∂<span>.мιѕняα</span></a>
+        </div>
+        <div class="navs">
+            <ul class="nav-list" id="navs">
+                <li><a href="#home" class="nav-link under" style="--i:1">Home</a></li>
+                <li><a href="#about" class="nav-link under" style="--i:2">About</a></li>
+                <li><a href="#skills" class="nav-link under" style="--i:3">Skills</a></li>
+                <li><a href="#project" class="nav-link under" style="--i:4">Project</a></li>
+                <li><a href="#contact" class="nav-link btn primary-btn afterunder" style="--i:5">Contact</a></li>
+
+                <div class="close">
+                    <button class="nav-close" id="nav-close">
+                        &times;
+                    </button>
+                </div>
+            </ul>
+        </div>
+        <div class="menu">
+            <button class="nav-menu" id="nav-menu">
+                &#9776;
+            </button>
+        </div>
+    </header>
+
+    <section class="hero flex item-center justifey-between" id="home">
+        <div class="left-hero ">
+            <div class="hero-content">
+                <p class="hi">Hi, I'm</p>
+                <h1>
+                    <span class="highlight"></span>
+                </h1>
+
+                </h1>
+                <h2>Java Developer | Backend Developer</h2>
+                <p>I specialize in building high performence Java Applications and morden web interface.</p>
+            </div>
+            <div class="hero-button">
+                <button class="btn primary-btn" id="hirebtn">Hire Me</button>
+                <!-- <a href="#contact" class="btn primary-btn"></a> -->
+                <a href="https://drive.google.com/file/d/1lqKmXPp5iQOOVFEM1eHqYZfRh3X1N_QW/view?usp=drivesdk"
+                    class="btn secondray-btn">Download CV</a>
+            </div>
+
+            <div id="hiremodel" class="modal">
+
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModal">&times;</span>
+                    <h2>Hire Me</h2>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <label for="message">Project Details</label>
+                        <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="socialLogo herosocial">
+                <a href="https://www.linkedin.com/in/raghvendramishra05/" class="logo" target="_blank">
+                    <img src="./image/—Pngtree—linkedin icon_3547995.png" alt="" class="slogo">
+                </a>
+                <a href="https://github.com/ganeshmishra72" target="_blank" class="logo">
+                    <img src="./image//icons8-github-logo-50.png" alt="" class="slogo">
+                </a>
+                <a href="https://www.instagram.com/ganesh_mishra72?igsh=d21sZHU0MzB4Yw==" class="logo" target="_blank">
+                    <img src="./image//icons8-instagram-50.png" alt="" class="slogo">
+                </a>
+            </div>
+        </div>
+        <div class="right-hero flex justifey-center">
+            <div class="hero-img">
+                <img src="./image//ganesh.jpg" alt="profileImage" loading="lazy" class="profileImg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <h2 class="sectiohead">About <span> Me</span></h2>
+        <p class="tagline">Crafting Code, Creating Impact</p>
+        <div class="container flex item-center justifey-between">
+            <div class="left-about">
+                <img src="./image//ganeshnew.jpg" alt="profileimage/" class="profileImg" loading="lazy">
+            </div>
+            <div class="right-about fade-up">
+                <div class="summary card">
+                    <p>
+                        I'm a passionate <strong>Java Developer</strong> who loves crafting
+                        clean and efficient code. With a strong foundation in backend
+                        development, I create solutions that are both innovative and
+                        user-friendly.
+                    </p>
+                </div>
+                <div class="currently card">
+                    <p>
+                        Currently, I’m exploring <strong>Spring Boot</strong> and
+                        <strong>MERN Stack</strong> to build powerful, user-friendly
+                        applications.
+                    </p>
+                </div>
+                <div class="presoanltouch card">
+                    <p>
+                        Outside of coding, I enjoy writing <strong>Shayari</strong> and
+                        working on side projects.
+                    </p>
+                </div>
+                <div class="fun-fact card">
+                    <p>Fun Fact: I can debug faster than I can cook noodles 🍜</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <h2 class="skillshead">Tech <span> Stack</span></h2>
+        <div class="gridcontainer">
+            <div class="grid1 card">
+                <div class="heading">
+                    <p>Frontend Skills</p>
+                    <div class="progress-bar">
+                        <div class="skill1" data-percent="90">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">HTML</span>
+                            </div>
+                        </div>
+                        <div class="skill1" data-percent="75">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill1" data-percent="50">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill1" data-percent="90">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">JavaFX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gird2 card">
+                <div class="heading">
+                    <p>Backend Skills</p>
+                    <div class="progress-bar">
+                        <div class="skill1" data-percent="80">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">Spring Boot</span>
+                            </div>
+                        </div>
+                        <div class="skill1" data-percent="10">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">Node.Js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid3 card">
+                <div class="heading">
+                    <p>Database</p>
+                    <div class="progress-bar">
+                        <div class="skill1" data-percent="95">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">MySQl</span>
+                            </div>
+                        </div>
+                        <div class="skill1" data-percent="70">
+                            <svg viewBox="0 0 120 120" class="ring">
+                                <circle class="track" cx="60" cy="60" r="52"></circle>
+                                <circle class="progress" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="skills-center">
+                                <span class="value">0%</span>
+                                <span class="label">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerp">
+            <div class="skillshead">
+                <p>Tools/ <span>Other</span> </p>
+            </div>
+            <div class="progresscontainer">
+                <h4>Git</h4>
+                <div class="progressbar">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <h4>Linux</h4>
+                <div class="progressbar">
+                    <span data-width="75%"></span>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <h4>Maven</h4>
+                <div class="progressbar">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project" id="project">
+        <h2 class="sectiohead">My <span> Work</span></h2>
+        <p class="tagline">Some of the project I have worked on recently</p>
+        <div class="projectcard ">
+
+            <!-- // card1 -->
+            <div class="projectcards card">
+                <div class="projectimg ">
+                    <img src="./image//Screenshot 2025-07-31 191116.png" alt="bankingsystem" class="image">
+                </div>
+                <div class="projectInfo">
+                    <h3>Online Atm</h3>
+                    <p>An Online ATM System that provides secure,real-time transaction and user-friendly interface.
+                    </p>
+                </div>
+                <div class="techStack">
+                    <span>JAVA |</span>
+                    <span>Swing |</span>
+                    <span>MySQl</span>
+                </div>
+                <div class="projectBtn">
+                    <a href="https://github.com/ganeshmishra72/Smart-Banking-System-Text-" target="_blank"
+                        class="btn secondray-btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="projectcards card">
+                <div class="projectimg ">
+                    <img src="./image//Screenshot 2025-08-16 140132.png" alt="bankingsystem" class="image">
+                </div>
+                <div class="projectInfo">
+                    <h3>Car Rental System</h3>
+                    <p>A smart Java based applications for hassle-free vechile booking.
+                    </p>
+                </div>
+                <div class="techStack">
+                    <span>JAVA |</span>
+                    <span>JavFX |</span>
+                    <span>MySQl</span>
+                </div>
+                <div class="projectBtn">
+                    <a href="https://github.com/ganeshmishra72/carrentalsystem" target="_blank"
+                        class="btn secondray-btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="projectcards card">
+                <div class="projectimg ">
+                    <img src="./image//Screenshot 2025-08-16 142029.png" alt="bankingsystem" class="image">
+                </div>
+                <div class="projectInfo">
+                    <h3>Health care System</h3>
+                    <p>A didital soultion for easy patient management and efficient health record tracking.
+                    </p>
+                </div>
+                <div class="techStack">
+                    <span>JAVA |</span>
+                    <span>Swing |</span>
+                    <span>MySQl</span>
+                </div>
+                <div class="projectBtn">
+                    <a href="https://github.com/ganeshmishra72/Hospital-Management-System-text-" target="_blank"
+                        class="btn secondray-btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="projectcards card">
+                <div class="projectimg ">
+                    <img src="./image//Screenshot 2025-07-31 184023.png" alt="bankingsystem" class="image">
+                </div>
+                <div class="projectInfo">
+                    <h3>Profile Card</h3>
+                    <p>Lightweigth, responsive profile card in vanilaa.
+                    </p>
+                </div>
+                <div class="techStack">
+                    <span>HTML |</span>
+                    <span>CSS </span>
+
+                </div>
+                <div class="projectBtn">
+                    <a href="#" target="_blank" class="btn secondray-btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="projectcards card">
+                <div class="projectimg ">
+                    <img src="./image//Screenshot from 2025-08-20 16-27-17.png" alt="bankingsystem" class="image">
+                </div>
+                <div class="projectInfo">
+                    <h3>Loker Guard</h3>
+                    <p>Linuc & Java Based Encryption & Decryption Sytem
+                    </p>
+                </div>
+                <div class="techStack">
+                    <span>JAVA |</span>
+                    <span>Linux |</span>
+                    <span>AVS </span>
+                </div>
+                <div class="projectBtn">
+                    <a href="https://github.com/ganeshmishra72/LockerGuard" target="_blank"
+                        class="btn secondray-btn">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="sectiohead">Get in <span> Touch</span></h2>
+        <p class="tagline contactp">Feel free to reach out for collaborations or just a friendly hello</p>
+        <div class="contactcontainer  ">
+            <div class="leftcontact">
+                <div class="contactInfo">
+                    <div class="infoitem">
+                        <img src="./image//pin.png" alt="" class="csocialogo">
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="infoitem"> <img src="./image//mail.png" alt="" class="csocialogo">
+                        <a href="https://mail.google.com" target="_blank">
+                            <p>raghvendarmishra143@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="infoitem"> <img src="./image//telephone.png" alt="" class="csocialogo">
+                        <p>(+91)
+                            8600327769</p>
+                    </div>
+
+                </div>
+                <div class="socialLogo contactsocial">
+                    <a href="https://github.com/ganeshmishra72" target="_blank"><img
+                            src="./image//icons8-github-logo-50.png" alt="github" class="slogo" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560220586993&mibextid=ZbWKwL"
+                        target="_blank"><img src="./image//icons8-facebook-50.png" alt="linkden" class="slogo"></a>
+                    <a href="https://www.instagram.com/ganesh_mishra72?igsh=d21sZHU0MzB4Yw==" target="_blank"><img
+                            src="./image//icons8-instagram-50.png" alt="instagram" class="slogo"></a>
+                    <a href="https://wa.me/+918600327769" target="_blank"><img src="./image//icons8-whatsapp-24.png"
+                            alt="wataspp" class="slogo"></a>
+                    <a href="https://leetcode.com/u/ganesh_mishra72/" target="_blank"><img
+                            src="./image//icons8-leetcode-24.png" alt="leetcode" class="slogo"></a>
+                </div>
+            </div>
+            <div class="rightcontact contactcard">
+                <form action="" class="contact-from">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </form>
+                <button class="btn primary-btn">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="name-logo">
+                    <a href="#">я∂<span>.мιѕняα</span></a>
+                </div>
+                <p class="tagline">Designed & Developed by Raghvendra Mishra</p>
+            </div>
+            <div class="center-footer">
+                <h3>Services</h3>
+                <ul class="footerlink-list flex justifey-center item-center">
+                    <li><a href="#" class="footerlink">Home</a></li>
+                    <li><a href="#about" class="footerlink">About</a></li>
+                    <li><a href="#skills" class="footerlink">Skills</a></li>
+                    <li><a href="#project" class="footerlink">Project</a></li>
+                    <li><a href="#contact" class="footerlink">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-footer">
+                <h3>Follow Me</h3>
+                <div class="fsocillink flex">
+                    <a href="https://github.com/ganeshmishra72" target="_blank"><img
+                            src="./image//icons8-github-logo-50.png" alt="github" class="socialogo" /></a>
+                    <a href="https://www.linkedin.com/in/raghvendramishra05/" target="_blank"><img
+                            src="./image/—Pngtree—linkedin icon_3547995.png" alt="linkden" class="socialogo"></a>
+                    <a href="https://www.instagram.com/ganesh_mishra72?igsh=d21sZHU0MzB4Yw==" target="_blank"><img
+                            src="./image//instagram.png" alt="instagram" class="socialogo"></a>
+                    <a href="https://leetcode.com/u/ganesh_mishra72/" target="_blank"><img src="./image//coding.png"
+                            alt="leetcode" class="socialogo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copywrite">
+            &copy;2025 Raghvendra Mishra. All Rights Reserved
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".highlight", {
+            strings: ["Raghvendar Mishra"],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

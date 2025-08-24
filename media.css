@@ -1,0 +1,373 @@
+/* ✅ 600px se upar ke screens ke liye */
+@media screen and (min-width:600px) {
+    body {
+        font-size: 17px;
+    }
+
+    .containerp .progresscontainer .progressbar {
+        position: relative;
+        width: 32rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+}
+
+/* ✅ 768px se upar ke screens ke liye */
+@media screen and (min-width:768px) {
+
+    .menu,
+    .close {
+        display: none;
+    }
+
+    .navs {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    .nav-list {
+        position: static;
+        /* fixed ki jagah normal */
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        border: none;
+        gap: 1.5rem;
+        font-size: 1rem;
+        left: 0;
+        /* reset */
+        display: flex;
+    }
+
+    .nav-link {
+        opacity: 1;
+        transform: none;
+        animation: none;
+        font-size: 0.985rem;
+    }
+
+    .nav-link {
+        color: var(--text);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .nav-link:hover {
+        color: var(--hover);
+    }
+
+    .nav-list a.active {
+        color: cyan;
+        border-bottom: 2px solid cyan;
+        /* desktop pe left-border ki jagah bottom-border accha lagega */
+        font-weight: bold;
+    }
+
+    .hero {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-hero {
+        max-width: 18rem;
+        text-align: left;
+    }
+
+    .hero-button {
+        justify-content: flex-start;
+    }
+
+    .herosocial {
+        justify-content: flex-start;
+    }
+
+    .hero-content h1 {
+        line-height: 1.7;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .hero-content p {
+        font-weight: 400;
+        margin-bottom: 0rem;
+        font-size: 0.85rem;
+
+    }
+
+    .right-about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+    }
+
+    .right-about p {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .gridcontainer {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .heading p {
+        font-size: 1.1rem;
+    }
+
+    .sectiohead,
+    .skillshead {
+        font-size: 1.5rem;
+    }
+
+    .containerp .progresscontainer .progressbar {
+        width: 45rem;
+        height: 2rem;
+    }
+
+    .projectcard {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 2rem; */
+        place-items: center;
+
+    }
+
+    .projectInfo h3 {
+        font-size: 1.1rem;
+    }
+
+    .projectInfo p {
+        font-size: 0.985rem
+    }
+
+    .projectBtn {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+
+
+    .contactcontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .name-logo {
+        font-size: 1.1rem;
+    }
+
+    .left-footer p,
+    .center-footer h3,
+    .right-footer h3 {
+        font-size: 1.1rem;
+
+    }
+
+}
+
+@media screen and (min-width:990px) {
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .left-hero {
+        max-width: 22rem;
+        text-align: left;
+    }
+
+    .hero-button {
+        justify-content: flex-start;
+    }
+
+    .herosocial {
+        justify-content: flex-start;
+    }
+
+    .right-hero {
+        max-width: 23rem
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .containerp .progresscontainer .progressbar {
+        width: 55rem;
+        height: 2rem;
+    }
+
+    .projectcard {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .right-about {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-from {
+
+        width: 23rem;
+        gap: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+
+        flex-direction: row;
+        /* ek ke niche ek aa jayenge */
+        align-items: center;
+        /* sab center ho jayega */
+        gap: 2rem;
+        /* cards ke beech space */
+        padding: 0 4rem;
+    }
+
+    .right-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: start;
+        margin-top: 2rem;
+
+    }
+
+    .right-about .card {
+        flex: 1 1 250px;
+        max-width: 400px;
+
+    }
+
+    .profileImg {
+        width: 29rem;
+        height: 29rem;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.5);
+    }
+
+    .left-hero {
+        flex: 1;
+        max-width: 40rem;
+    }
+
+    .left-hero h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .left-hero h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .left-hero p {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .hero-button {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .herosocial {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .gridcontainer {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .heading p {
+        font-size: 1.3rem;
+    }
+
+
+
+    .containerp .progresscontainer .progressbar {
+        width: 80rem;
+        height: 2rem;
+    }
+
+    .projectcard {
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+
+    .projectInfo h3 {
+        font-size: 1.5rem;
+    }
+
+    .projectInfo p {
+        font-size: 1rem
+    }
+
+    .projectBtn {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .name-logo {
+        font-size: 1.3rem;
+    }
+
+    .left-footer p,
+    .center-footer h3,
+    .right-footer h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .contactcontainer {
+        margin-top: 5rem;
+        gap: 3rem;
+
+        padding: 4rem 6rem;
+
+        align-items: flex-start;
+    }
+
+    .contact-from {
+
+        width: 25rem;
+        gap: 1.2rem;
+    }
+
+
+}

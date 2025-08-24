@@ -1,0 +1,108 @@
+.nav-close,
+.nav-menu {
+
+    font-size: 1.5rem;
+    margin: 0 auto;
+    background-color: transparent;
+    color: aliceblue;
+    z-index: 1000;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justifey-center {
+    justify-content: center;
+}
+
+.justifey-between {
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 0.5px solid var(--secondary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 0.95rem;
+    outline: none;
+}
+
+.nav-list li a.active {
+    color: var(--hover);
+}
+
+.nav-list li a.active::after {
+    width: 100%;
+}
+
+.profileImg {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(0, 255, 247, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.profileImg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 255, 247, 0.9);
+}
+
+.card {
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 1.2rem 1.6rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    transition: all 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.6);
+
+}
+
+.contactcard {
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 1.2rem 1.6rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    transition: all 0.3s ease;
+
+
+}
+
+.rightcontact {
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 4px #00FFFF);
+    }
+
+    to {
+        filter: drop-shadow(0 0 12px #00FFFF);
+    }
+}
